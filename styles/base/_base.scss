@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/*
+By using rem over the whole project, this media query does a huge amount of work
+for the responsiveness, since every font is scaled appropriately hence the 
+font-size defines the size of the unit rem. 
+*/
+html {
+  // This defines what 0rem is (default font-size is 16px in browser)
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+}
+body {
+  box-sizing: border-box;
+  background-color: $color-primary-dark;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+//https://github.com/vercel/next.js/discussions/44739
