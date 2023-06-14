@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: sans-serif;
 }
 
 /*
@@ -17,7 +18,7 @@ html {
 }
 body {
   box-sizing: border-box;
-  background-color: $color-primary-dark;
+  background-color: $color-black;
 }
 
 ::selection {
